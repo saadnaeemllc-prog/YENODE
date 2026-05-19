@@ -1,19 +1,25 @@
-# Beyenode Final GitHub Pages Package
+# YENODE Final Production Upload
 
-Upload these extracted files directly into the GitHub repository root:
+Upload the extracted files directly into the GitHub repository root.
 
-- index.html
-- yenode-contact.html
-- CNAME
-- .nojekyll
-- README.md
+Do not upload this ZIP itself.
 
-Do not upload the ZIP itself.
-
-GitHub Pages settings:
+Required GitHub Pages settings:
 - Source: Deploy from a branch
 - Branch: main
 - Folder: /root
 
-Custom domain:
+Included:
+- index.html
+- yenode-contact.html
+- favicon assets
+- og-image.png
+- robots.txt
+- sitemap.xml
+- site.webmanifest
+- 404.html
+- CNAME
+- .nojekyll
+
+Domain:
 beyenode.com
