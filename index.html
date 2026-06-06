@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -15,16 +15,16 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 
-<meta property="og:title" content="YENODE - AI Systems & Automation">
-<meta property="og:description" content="Practical AI systems, CRM workflows, follow-up, reporting, and automation layers for service businesses.">
+<meta property="og:title" content="YENODE - Lead Handling & Workflow Systems">
+<meta property="og:description" content="Practical lead handling, CRM, follow-up, reporting, and workflow automation systems for service businesses.">
 <meta property="og:image" content="https://beyenode.com/og-image.png">
 <meta property="og:url" content="https://beyenode.com">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="YENODE">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="YENODE - AI Systems & Automation">
-<meta name="twitter:description" content="Practical AI systems, CRM workflows, follow-up, reporting, and automation layers for service businesses.">
+<meta name="twitter:title" content="YENODE - Lead Handling & Workflow Systems">
+<meta name="twitter:description" content="Practical lead handling, CRM, follow-up, reporting, and workflow automation systems for service businesses.">
 <meta name="twitter:image" content="https://beyenode.com/og-image.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -904,9 +904,130 @@ footer {
   .mid-cta-band { padding: 34px 20px; }
   .mid-cta-btns .btn-primary, .mid-cta-btns .btn-ghost { width: 100%; text-align: center; }
 }
+
+/* HOMEPAGE HEADER + MOBILE REPAIR */
+nav {
+  background: rgba(8, 12, 11, .92);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--bd);
+}
+
+body { overflow-x: hidden; }
+img, svg, video { max-width: 100%; }
+.hero, section, .services-wrap, .how-wrap, .why-wrap, .tools-wrap, .blueprints-wrap, .results-band, .mid-cta-band, footer { overflow-x: clip; }
+.hero-shell, .services-header, .process-cols, .mid-cta-inner, .footer-inner { min-width: 0; }
+.hero-copy, .hero-panel, .service-card, .blueprint-card, .why-card, .result-cell { min-width: 0; }
+
+@media (max-width: 900px) {
+  nav { padding: 0 24px; }
+  .nav-links { display: none; }
+}
+
+@media (max-width: 600px) {
+  nav { height: 58px; padding: 0 14px; }
+  .nav-logo { min-width: 0; }
+  .nav-logo svg { width: 18px; height: 21px; flex: 0 0 auto; }
+  .nav-wordmark { font-size: 12px; letter-spacing: 4px; }
+  .nav-cta {
+    max-width: 150px;
+    padding: 8px 10px;
+    font-size: 8.5px;
+    letter-spacing: .8px;
+    line-height: 1.2;
+    text-align: center;
+    white-space: normal;
+  }
+
+  .hero { padding: 92px 16px 56px; min-height: auto; }
+  .hero-shell { grid-template-columns: 1fr; gap: 34px; }
+  .hero-h1 {
+    max-width: 100%;
+    font-size: clamp(42px, 15vw, 62px);
+    line-height: .96;
+    letter-spacing: 0;
+    overflow-wrap: anywhere;
+  }
+  .hero-sub { max-width: 100%; font-size: 15px; line-height: 1.35; }
+  .hero-body { max-width: 100%; font-size: 12px; line-height: 1.75; }
+  .hero-actions { width: 100%; grid-template-columns: 1fr; }
+  .hero-actions .btn-primary, .hero-actions .btn-ghost { width: 100%; text-align: center; }
+  .hero-panel { width: 100%; }
+
+  .hero-stats { grid-template-columns: 1fr; padding: 0; gap: 0; }
+  .stat { padding: 18px; border-right: 0 !important; border-bottom: 1px solid var(--bd) !important; }
+  .stat:last-child { border-bottom: 0 !important; }
+  .stat-div { display: none; }
+
+  section { padding: 56px 16px; }
+  .section-title { font-size: clamp(30px, 10vw, 42px); line-height: 1.05; letter-spacing: 0; }
+  .section-sub { max-width: 100%; }
+  .services-header, .mid-cta-inner { grid-template-columns: 1fr; }
+  .services-grid, .blueprints-grid, .why-grid, .results-grid { grid-template-columns: 1fr !important; }
+  .process-cols { grid-template-columns: 1fr !important; gap: 28px !important; }
+  .step { grid-template-columns: 32px 1fr; }
+  .step-tools { grid-column: 2; }
+  .tools-grid { gap: 8px; }
+  .tool-chip { white-space: normal; text-align: center; }
+  .footer-inner { align-items: flex-start; gap: 16px; }
+}
+
+@media (max-width: 380px) {
+  .nav-wordmark { letter-spacing: 3px; }
+  .nav-cta { max-width: 132px; font-size: 8px; padding: 7px 8px; }
+  .hero-h1 { font-size: 40px; }
+}
+
+/* MOBILE ALIGNMENT FIX */
+@media (max-width: 600px) {
+  .hero-eyebrow {
+    width: 100%;
+    justify-content: center !important;
+    text-align: center;
+    gap: 10px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-wrap: anywhere;
+  }
+
+  .hero-eyebrow::before,
+  .hero-eyebrow::after {
+    width: auto;
+    flex: 1 1 24px;
+    max-width: 48px;
+    min-width: 18px;
+  }
+}
+
 </style>
 </head>
 <body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="index.html" aria-label="Yenode homepage">
+    <svg width="18" height="21" viewBox="0 0 88 100" fill="none" aria-hidden="true">
+      <line x1="10" y1="8" x2="44" y2="52" stroke="#00C9A7" stroke-width="10" stroke-linecap="butt"/>
+      <rect x="4" y="2" width="12" height="12" fill="#00C9A7"/>
+      <line x1="78" y1="8" x2="44" y2="52" stroke="#00C9A7" stroke-width="10" stroke-linecap="butt"/>
+      <rect x="72" y="2" width="12" height="12" fill="#00C9A7"/>
+      <line x1="44" y1="52" x2="44" y2="92" stroke="#0A6F5E" stroke-width="10" stroke-linecap="butt"/>
+      <rect x="36" y="84" width="16" height="12" fill="#00866F"/>
+      <rect x="36.5" y="44.5" width="15" height="15" fill="#0F1512" stroke="#00C9A7" stroke-width="4" transform="rotate(45 44 52)"/>
+    </svg>
+    <span class="nav-wordmark">YENODE</span>
+  </a>
+  <div class="nav-links" aria-label="Primary navigation">
+    <a href="#services">Services</a>
+    <a href="#how">Process</a>
+    <a href="#blueprints">Systems</a>
+    <a href="#tools">Stack</a>
+    <a href="yenode-contact.html">Contact</a>
+  </div>
+  <a class="nav-cta" href="https://meet.brevo.com/yenode" target="_blank" rel="noopener">BOOK A CALL</a>
+</nav>
 
 <!-- HERO -->
 <div class="hero">
@@ -932,7 +1053,7 @@ footer {
 
       <div class="hero-actions">
         <a class="btn-primary" href="yenode-contact.html">BOOK SYSTEM AUDIT</a>
-        <a class="btn-ghost" href="#blueprints">VIEW SYSTEMS</a>
+        <a class="btn-ghost" href="#blueprints">SEE THE SYSTEM</a>
       </div>
     </div>
 
@@ -1036,7 +1157,7 @@ footer {
     </div>
     <div class="mid-cta-btns">
       <a class="btn-primary" href="yenode-contact.html">BOOK SYSTEM AUDIT</a>
-      <a class="btn-ghost" href="#blueprints">VIEW SYSTEMS</a>
+        <a class="btn-ghost" href="#blueprints">SEE THE SYSTEM</a>
     </div>
   </div>
 </div>
@@ -1204,7 +1325,7 @@ footer {
     <p class="cta-body">Book a system audit. We will map your lead flow, CRM, follow-up, quote handling, and manual tasks, then identify the first workflow to build.</p>
     <div class="cta-actions">
       <a class="btn-primary" href="yenode-contact.html">BOOK SYSTEM AUDIT</a>
-      <a class="btn-ghost" href="#blueprints">VIEW SYSTEMS</a>
+        <a class="btn-ghost" href="#blueprints">SEE THE SYSTEM</a>
     </div>
   </div>
 </div>
@@ -1324,6 +1445,14 @@ window.addEventListener('scroll', () => {
 </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
 
 
 
