@@ -584,6 +584,35 @@
       .section { padding: 64px 0; }
       .footer .container { display: grid; gap: 8px; }
     }
+    /* -- FINAL MOBILE HEADING GUARD ------------------- */
+    .hero-title,
+    .section h2,
+    .cta-panel h2 {
+      overflow-wrap: normal;
+      word-break: normal;
+      hyphens: manual;
+    }
+
+    @media (max-width: 640px) {
+      .hero-title {
+        font-size: clamp(34px, 11vw, 48px) !important;
+        line-height: 1.04 !important;
+        max-width: 100% !important;
+      }
+
+      .section h2,
+      .cta-panel h2 {
+        font-size: clamp(28px, 9vw, 38px) !important;
+        line-height: 1.08 !important;
+        max-width: 100% !important;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .hero-title { font-size: 32px !important; }
+      .section h2,
+      .cta-panel h2 { font-size: 28px !important; }
+    }
   </style>
 </head>
 <body id="top">

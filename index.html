@@ -1001,6 +1001,38 @@ img, svg, video { max-width: 100%; }
   }
 }
 
+/* -- FINAL MOBILE HEADING GUARD ------------------- */
+.hero-h1,
+.section-title,
+.cta-h {
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: manual;
+}
+
+@media (max-width: 640px) {
+  .hero-h1 {
+    font-size: clamp(36px, 12vw, 50px) !important;
+    line-height: 1.02 !important;
+    max-width: 100% !important;
+  }
+
+  .section-title {
+    font-size: clamp(28px, 9vw, 38px) !important;
+    line-height: 1.08 !important;
+    max-width: 100% !important;
+  }
+
+  .cta-h {
+    font-size: clamp(30px, 9vw, 40px) !important;
+    line-height: 1.08 !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero-h1 { font-size: 34px !important; }
+  .section-title { font-size: 28px !important; }
+}
 </style>
 </head>
 <body>

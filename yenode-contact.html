@@ -468,6 +468,24 @@ footer {
 
 
 
+/* -- FINAL MOBILE HEADING GUARD ------------------- */
+.page-title {
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: manual;
+}
+
+@media (max-width: 640px) {
+  .page-title {
+    font-size: clamp(34px, 10vw, 42px) !important;
+    line-height: 1.05 !important;
+    max-width: 100% !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .page-title { font-size: 32px !important; }
+}
 </style>
 
 <style>
@@ -792,6 +810,58 @@ label.entry__label[style] {
   box-shadow:
     0 0 0 3px rgba(0,201,167,.085),
     0 8px 24px rgba(0,0,0,.18) !important;
+}
+
+/* Browser saved credentials / autofill guard */
+#sib-container input:-webkit-autofill,
+#sib-container input:-webkit-autofill:hover,
+#sib-container input:-webkit-autofill:focus,
+#sib-container textarea:-webkit-autofill,
+#sib-container textarea:-webkit-autofill:hover,
+#sib-container textarea:-webkit-autofill:focus,
+#sib-container select:-webkit-autofill,
+#sib-container select:-webkit-autofill:hover,
+#sib-container select:-webkit-autofill:focus,
+#sib-form input:-webkit-autofill,
+#sib-form input:-webkit-autofill:hover,
+#sib-form input:-webkit-autofill:focus,
+#sib-form textarea:-webkit-autofill,
+#sib-form textarea:-webkit-autofill:hover,
+#sib-form textarea:-webkit-autofill:focus,
+#sib-form select:-webkit-autofill,
+#sib-form select:-webkit-autofill:hover,
+#sib-form select:-webkit-autofill:focus {
+  background-color: #0B100E !important;
+  background-image: none !important;
+  color: #E8F2EE !important;
+  -webkit-text-fill-color: #E8F2EE !important;
+  caret-color: #00C9A7 !important;
+  border-color: rgba(0,201,167,.62) !important;
+  box-shadow:
+    0 0 0 1000px #0B100E inset,
+    0 0 0 3px rgba(0,201,167,.10),
+    0 8px 24px rgba(0,0,0,.18) !important;
+  -webkit-box-shadow:
+    0 0 0 1000px #0B100E inset,
+    0 0 0 3px rgba(0,201,167,.10),
+    0 8px 24px rgba(0,0,0,.18) !important;
+  transition:
+    background-color 9999s ease-out,
+    color 9999s ease-out,
+    border-color .22s ease,
+    box-shadow .22s ease !important;
+}
+
+#sib-container input:autofill,
+#sib-container textarea:autofill,
+#sib-container select:autofill,
+#sib-form input:autofill,
+#sib-form textarea:autofill,
+#sib-form select:autofill {
+  background-color: #0B100E !important;
+  color: #E8F2EE !important;
+  -webkit-text-fill-color: #E8F2EE !important;
+  box-shadow: 0 0 0 1000px #0B100E inset !important;
 }
 
 /* Subtle moving node/signal border on focus only */
